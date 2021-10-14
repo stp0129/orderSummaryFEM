@@ -29,6 +29,7 @@ body{
   font-family: "Red Hat Display";
   font-size: 16px;
   min-height: 130vh;
+  background-color: #e0e8ff;
 }
 
 .container{
@@ -52,6 +53,7 @@ body{
 .picutre{
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  display: block;
 }
 
 .order-text{
@@ -87,12 +89,19 @@ align-items: center;
 }
 .plan-text > h4{
   font-weight: 900;
+  margin-bottom:.25rem;
 }
 .plan-link{
 flex-basis: 40%;
 text-align: right;
 margin-right: .75rem;
 font-weight: 700;
+}
+.plan-link>a{
+  text-decoration: none;
+}
+.plan-link>a:hover{
+  color:#A757F2;
 }
 
 .payment-button{
@@ -117,9 +126,15 @@ font-weight: 700;
   color: white;
   align-self: center;
 }
+.payment-button:hover{
+  background-color: #A757F2;
+}
 
 .cancel-button{
   text-align: center;
+}
+.cancel-button>a:hover{
+  color:hsl(223, 47%, 23%);
 }
 
 .cancel-button > a{
